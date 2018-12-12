@@ -8780,14 +8780,17 @@ body {
 }
 
 .banner {
-  background-image: url(.././img/hero-image.jpg);
+  position: relative;
+}
+.banner img {
   background-size: cover;
-  max-width: 600px;
-  height: 120px;
+  max-width: 100%;
+  height: auto;
   justify-content: center;
 }
 .banner h1 {
   font-size: 24px;
+  position: absolute;
 }
 
 .overview h2 {

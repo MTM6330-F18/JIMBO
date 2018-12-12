@@ -6,7 +6,6 @@ body {
   max-width: 1920px;
   height: auto;
   margin: 0 auto;
-
 }
 
 .container {
@@ -24,7 +23,6 @@ body {
   justify-content: space-between;
   overflow: visible;
 }
-
 
 .navbar-header {
   clear: both;
@@ -59,14 +57,17 @@ body {
 }
 
 .banner {
-  background-image: url(.././img/hero-image.jpg);
-  background-size: cover;
-  max-width: 600px;
-  height: 120px;
-  justify-content: center;
-
+  position: relative;
+  //background-image: url('/img/hero-image.jpg');
+  img {
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
   h1 {
     font-size: 24px;
+    position: absolute;
   }
 }
 
@@ -93,7 +94,6 @@ body {
   .col {
     border: 1px solid gray;
     margin: 8px;
-
   }
 }
 
