@@ -1,5 +1,5 @@
 {
-  "name": "MTM6330-final-KISS",
+  "name": "mtm6330-final-kiss",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Team KISS",
@@ -10,6 +10,7 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
-    "sass": "^1.14.1"
+    "sass": "^1.14.1",
+    "sass-burger": "^1.3.1"
   }
 }
