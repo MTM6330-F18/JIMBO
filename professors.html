@@ -5,7 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/min/main.css" />
-    <title>TITLE HERE</title>
+    <!-- Utilizes jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Utilizes Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Professors - IMD</title>
   </head>
-  <body></body>
+
+  <body>
+
+    <div class="container">
+      <a class="logo" href="index.html"><img src="../MTM6330-final-KISS/img/logo.png" alt="" width="96px" height="80px"/></a>
+        <nav class="navbar navbar-expand-md navbar-light navbar-right">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button
+                  class="navbar-toggler btn-primary menu-button"
+                  id="menuButton"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarTogglerDemo02"
+                  aria-controls="navbarTogglerDemo02"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="burger-icon"> </span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Overview </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="professors.html">Professors <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="schedules.html">Schedule</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <script>
+          $(document).ready(function() {
+            $('.btn-primary').click(function() {
+              $('.collapse').collapse('toggle')
+            })
+          })
+    
+          var menuButton = document.getElementById('menuButton')
+          menuButton.addEventListener('click', function(e) {
+            menuButton.classList.toggle('is-active')
+            e.preventDefault()
+          })
+        </script>
+
+
+
+
+
+  </body>
+</html>
+
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-6">Interactive Media Design</h1>
+    </div>
+    <a href="#"> <i class="fas fa-book round"></i> </a>
+    <a href="#"> <i class="fas fa-dollar-sign round"> </i> </a>
+    <a href="#"> <i class="fas fa-address-book round"> </i></a>
+  </div>
+
+  <main>
+    <div class="container">
+          <div class="row">
+            <div class="card col-md-12 p-3">
+              <div class="row ">
+                <div class="col-md-4">
+                  <img class="w-100" src="https://via.placeholder.com/350x350">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block">
+                    <h6 class="card-title">Card Title</h6>
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="https://www.google.com" class="btn btn-primary">read more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-12 p-3">
+              <div class="row ">
+                <div class="col-md-8">
+                  <div class="card-block">
+                    <h6 class="card-title text-right">Card Title</h6>
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="btn btn-primary">read more...</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img class="w-100" src="https://via.placeholder.com/350x350">
+                </div>
+              </div>
+            </div>
+            <div class="card col-md-12 p-3">
+              <div class="row ">
+                <div class="col-md-4">
+                  <img class="w-100" src="https://via.placeholder.com/350x350">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block">
+                    <h6 class="card-title">Card Title</h6>
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="btn btn-primary">read more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card col-md-12 p-3">
+              <div class="row ">
+                <div class="col-md-4">
+                  <img class="w-100" src="https://via.placeholder.com/350x350">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block">
+                    <h6 class="card-title">Card Title</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="btn btn-primary">read more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </main>
+
+
+  <footer>Copyrights - Tsunami</footer>
+</body>
+
 </html>
