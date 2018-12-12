@@ -4,8 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/min/main.css" />
-    <title>TITLE HERE</title>
+    <link rel="stylesheet" href="css/min/main.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>IMD Overview</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <a class="logo" href="index.html"
+        ><img
+          src="../MTM6330-final-KISS/img/logo.png"
+          alt=""
+          width="96px"
+          height="80px"
+      /></a>
+      <nav class="navbar navbar-expand-md navbar-light navbar-right">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler btn-primary menu-button"
+              id="menuButton"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="burger-icon"> </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Overview <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="professors.html">Professors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedules.html">Schedule</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('.btn-primary').click(function() {
+          $('.collapse').collapse('toggle')
+        })
+      })
+
+      var menuButton = document.getElementById('menuButton')
+      menuButton.addEventListener('click', function(e) {
+        menuButton.classList.toggle('is-active')
+        e.preventDefault()
+      })
+    </script>
+    <div class="banner"></div>
+    <div class="content">
+      <div class="overview">
+        <h1>Interactive Media Design Program</h1>
+        <p>
+          This two-year Ontario college Diploma program is designed to prepare
+          students for a variety of careers in the digital media industry.
+          Students explore the primary elements of media project planning and
+          development with equal importance given to the creative and the
+          technical aspects. Strong emphasis is placed on hands-on media
+          production through courses in web development, digital imaging,
+          authoring, animation, photography and video. Students plan and execute
+          individual and team-based projects and gain practical experience
+          working with live clients. The curriculum is delivered on a variety of
+          platforms including Apple OS X, Windows and a variety of mobile
+          operating systems.
+        </p>
+      </div>
+      <div class="testimonial">
+        <ul class="flex-container">
+          <li class="flex-item">Testimonial 1</li>
+          <li class="flex-item">Testimonial 2</li>
+          <li class="flex-item">Testimonial 3</li>
+          <li class="flex-item">Testimonial 4</li>
+          <li class="flex-item">Testimonial 5</li>
+          <li class="flex-item">Testimonial 6</li>
+        </ul>
+      </div>
+      <div class="dates"></div>
+      <div class="members">
+        <h2>Program Coordinator</h2>
+        <p>tremblk3@algonquincollege.com room# j313 ext# 6935</p>
+      </div>
+      <div class="events"></div>
+    </div>
+  </body>
 </html>
