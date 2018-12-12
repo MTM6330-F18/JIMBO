@@ -9,6 +9,10 @@ body {
 
 }
 
+.container {
+  width: 100%;
+}
+
 .navbar {
   text-align: center;
   background-color: #ffffff;
@@ -20,6 +24,7 @@ body {
   justify-content: space-between;
   overflow: visible;
 }
+
 
 .navbar-header {
   clear: both;
@@ -54,14 +59,42 @@ body {
 }
 
 .banner {
-  background-image: url('/img/hero-image.jpg');
-  max-width: 720px;
-  max-height: 180px;
-  background-repeat: repeat-y;
-  background-size: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scroll-behavior: smooth;
+  background-image: url(.././img/hero-image.jpg);
+  background-size: cover;
+  max-width: 600px;
+  height: 120px;
+  justify-content: center;
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.overview {
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.testimonials {
+  .col {
+    border: 1px solid gray;
+    margin: 8px;
+
+  }
 }
 
 .content {
@@ -76,7 +109,17 @@ body {
     font-size: 20px;
   }
 
+  .overview {
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
 
+    hr {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
 
   .navbar {
     font-size: 28px;
@@ -92,7 +135,11 @@ body {
 
   .banner {
     max-width: 1920px;
-    max-height: 360px;
+    height: 240px;
+
+    h1 {
+      font-size: 36px;
+    }
   }
 
   // Styles
