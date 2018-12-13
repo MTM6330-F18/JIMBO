@@ -144,3 +144,12 @@ body {
 
   // Styles
 }
+
+@media (min-width: 1024px) {
+  .banner {
+    width: 950px;
+    height: 680px;
+    float: right;
+    padding: 20px;
+  }
+}
