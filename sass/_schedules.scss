@@ -135,10 +135,10 @@
   display: none;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 1024px) {
   .carousel img {
     width: 100%;
-    height: 360px;
+    height: 460px;
   }
 
   .timetable {
@@ -154,7 +154,6 @@
     width: 100%;
     height: 260px;
     margin: 0 auto;
-    padding: 25px;
   }
 
   .carousel-caption {
@@ -163,8 +162,18 @@
     margin: 0 auto;
   }
 
+
+
   .timetable {
-    margin: 10px;
-    width: auto;
+    margin: auto 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .carousel-inner>.item>img,
+  .carousel-inner>.item>a>img {
+    width: 100%;
+    /* use this, or not */
+    margin: auto;
   }
 }
