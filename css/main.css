@@ -6527,7 +6527,7 @@ body {
 
 @media (min-width: 1024px) {
   .banner {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     overflow: hidden; } }
 
