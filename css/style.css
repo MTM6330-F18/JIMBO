@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation img {
+	width: 225px;
+	height: 175px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #333;
+	width: 100px;
+	height: 25px;
+	display: block;
+	line-height: 25px;
+	float: right;
+	margin-top: 95px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.navigation a:hover {
+	width: 100xp;
+	height: 25px;
+	background: #66ff00;
+}
+
+.navigation_img {
+	width: 1000px;
+	height: 250px;
+	background: url(../img/123.jpg) no-repeat;
+	justify-items: center;
+	margin-top: 55px;
+	margin-bottom: 5px;
+}
+
+.navigation_1 {
+	width: 1000px;
+	height: 50px;
+}
+
+.navigation_1 a {
+	background: #999999;
+	width: 250px;
+	height: 30px;
+	display: inline-table;
+	text-decoration: none;
+	color: #333;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.content {
+	width: 1000px;
+	height: 600px;
+	padding-top: 65px;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.content_left {
+	width: 500px;
+	height: 570px;
+	background: #FFF;
+	margin-left: 20px;
+	float: left;
+	margin-top: 10px
+}
+
+.content_left p {
+	font-size: 16px;
+	line-height: 25px;
+	margin-left: 10px;
+	font-family: sans-serif;
+	color: #666666;
+}
+
+.content_right {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #666666;
+	width: 390px;
+	margin-right: 35px;
+	height: 175px;
+	background: #FFF;
+	float: right;
+	margin-top: 20px;
+}
+
+.content_right p {
+	margin-top: 25px;
+	font-size: 15px;
+	color: #666;
+	text-align: center;
+	line-height: 25px
+}
+
+.content_right h3 {
+	text-align: center
+}
+
+.content_right_grades {
+	font-size: 15px;
+	color: #666;
+	text-align: center;
+	line-height: 25px;
+	width: 390px;
+	margin-top: 100px;
+	margin-right: 175px;
+	float: right;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.navigation_img {
+		width: 400px;
+		height: 125px;
+
+		justify-items: center;
+	}
+}
