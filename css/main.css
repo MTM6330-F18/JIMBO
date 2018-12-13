@@ -6470,6 +6470,7 @@ body {
     height: auto;
     justify-content: center; }
   .banner h1 {
+    padding-top: 800px;
     font-size: 24px;
     position: absolute; }
 
@@ -6489,7 +6490,9 @@ body {
 
 .testimonials .col {
   border: 1px solid gray;
-  margin: 8px; }
+  margin: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; }
 
 .content {
   font-size: 14px;
@@ -6516,10 +6519,17 @@ body {
     padding: 0;
     justify-content: space-between; }
   .banner {
-    max-width: 1920px;
-    height: 240px; }
+    width: auto;
+    height: auto;
+    overflow: hidden; }
     .banner h1 {
       font-size: 36px; } }
+
+@media (min-width: 1024px) {
+  .banner {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden; } }
 
 /* Default Styling */
 html {
