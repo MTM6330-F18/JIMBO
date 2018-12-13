@@ -58,14 +58,19 @@ body {
 
 .banner {
   position: relative;
+
+
   //background-image: url('/img/hero-image.jpg');
+
   img {
     background-size: cover;
     max-width: 100%;
     height: auto;
     justify-content: center;
   }
+
   h1 {
+    padding-top: 800px;
     font-size: 24px;
     position: absolute;
   }
@@ -94,6 +99,8 @@ body {
   .col {
     border: 1px solid gray;
     margin: 8px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
   }
 }
 
@@ -134,8 +141,9 @@ body {
   }
 
   .banner {
-    max-width: 1920px;
-    height: 240px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 
     h1 {
       font-size: 36px;
