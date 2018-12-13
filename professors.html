@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Reads minified CSS -->
     <link rel="stylesheet" href="./css/min/main.css" />
     <!-- Utilizes jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,142 +18,277 @@
   </head>
 
   <body>
-
     <div class="container">
-      <a class="logo" href="index.html"><img src="../MTM6330-final-KISS/img/logo.png" alt="" width="96px" height="80px"/></a>
-        <nav class="navbar navbar-expand-md navbar-light navbar-right">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button
-                  class="navbar-toggler btn-primary menu-button"
-                  id="menuButton"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo02"
-                  aria-controls="navbarTogglerDemo02"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
+      <!-- Logo -->
+      <a class="logo" href="index.html"
+        ><img
+          src="../MTM6330-final-KISS/img/logo.png"
+          alt=""
+          width="96px"
+          height="80px"
+      /></a>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-light navbar-right">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler btn-primary menu-button"
+              id="menuButton"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="burger-icon"> </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Overview </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="professors.html"
+                  >Professors <span class="sr-only">(current)</span></a
                 >
-                  <span class="burger-icon"> </span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Overview </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="courses.html">Courses</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="professors.html">Professors <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="schedules.html">Schedule</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedules.html">Schedule</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <script>
-          $(document).ready(function() {
-            $('.btn-primary').click(function() {
-              $('.collapse').collapse('toggle')
-            })
-          })
-    
-          var menuButton = document.getElementById('menuButton')
-          menuButton.addEventListener('click', function(e) {
-            menuButton.classList.toggle('is-active')
-            e.preventDefault()
-          })
-        </script>
-
-
-
-
-
-  </body>
-</html>
-
-
-<body>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-6">Interactive Media Design</h1>
+      </nav>
     </div>
-    <a href="#"> <i class="fas fa-book round"></i> </a>
-    <a href="#"> <i class="fas fa-dollar-sign round"> </i> </a>
-    <a href="#"> <i class="fas fa-address-book round"> </i></a>
-  </div>
+    <!-- Burger collapse -->
+    <script>
+      $(document).ready(function() {
+        $('.btn-primary').click(function() {
+          $('.collapse').collapse('toggle')
+        })
+      })
+      var menuButton = document.getElementById('menuButton')
+      menuButton.addEventListener('click', function(e) {
+        menuButton.classList.toggle('is-active')
+        e.preventDefault()
+      })
+    </script>
 
-  <main>
-    <div class="container">
-          <div class="row">
-            <div class="card col-md-12 p-3">
-              <div class="row ">
-                <div class="col-md-4">
-                  <img class="w-100" src="https://via.placeholder.com/350x350">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="https://www.google.com" class="btn btn-primary">read more...</a>
-                  </div>
-                </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-6">Interactive Media Design</h1>
+      </div>
+      <a href="#"> <i class="fas fa-book round"></i> </a>
+      <a href="#"> <i class="fas fa-dollar-sign round"> </i> </a>
+      <a href="#"> <i class="fas fa-address-book round"> </i></a>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="card col-md-12 p-3">
+            <div class="row ">
+              <div class="col-md-4">
+                <img class="w-100" src="https://via.placeholder.com/350x350" />
               </div>
-            </div>
-            <div class="card col-md-12 p-3">
-              <div class="row ">
-                <div class="col-md-8">
-                  <div class="card-block">
-                    <h6 class="card-title text-right">Card Title</h6>
-                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-primary">read more...</a>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img class="w-100" src="https://via.placeholder.com/350x350">
-                </div>
-              </div>
-            </div>
-            <div class="card col-md-12 p-3">
-              <div class="row ">
-                <div class="col-md-4">
-                  <img class="w-100" src="https://via.placeholder.com/350x350">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-primary">read more...</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="card col-md-12 p-3">
-              <div class="row ">
-                <div class="col-md-4">
-                  <img class="w-100" src="https://via.placeholder.com/350x350">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-block">
-                    <h6 class="card-title">Card Title</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-primary">read more...</a>
-                  </div>
+              <div class="col-md-8">
+                <div class="card-block">
+                  <h6 class="card-title">Card Title</h6>
+                  <p class="card-text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <a href="https://www.google.com" class="btn btn-primary"
+                    >read more...</a
+                  >
                 </div>
               </div>
             </div>
           </div>
+          <div class="card col-md-12 p-3">
+            <div class="row ">
+              <div class="col-md-8">
+                <div class="card-block">
+                  <h6 class="card-title text-right">Card Title</h6>
+                  <p class="card-text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <a href="#" class="btn btn-primary">read more...</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img class="w-100" src="https://via.placeholder.com/350x350" />
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-12 p-3">
+            <div class="row ">
+              <div class="col-md-4">
+                <img class="w-100" src="https://via.placeholder.com/350x350" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-block">
+                  <h6 class="card-title">Card Title</h6>
+                  <p class="card-text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <a href="#" class="btn btn-primary">read more...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-12 p-3">
+            <div class="row ">
+              <div class="col-md-4">
+                <img class="w-100" src="https://via.placeholder.com/350x350" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-block">
+                  <h6 class="card-title">Card Title</h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <a href="#" class="btn btn-primary">read more...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </main>
+    </main>
 
-
-  <footer>Copyrights - Tsunami</footer>
-</body>
-
+    <footer>Copyright 2018</footer>
+  </body>
 </html>
+
+<!--
+  Adam Jarvis, Project Management Skills
+
+  ●	How long have you been with Algonquin College and IMD?
+  ○	I presume this is related to me being employed.  In that case, I started as a PA in September of 2008 with IMD (and also my first position at Algonquin), then began teaching in January of 2009, in IMD but also in Journalism.  I taught at Algonquin until the winter semester of 2016, then took a break and explored other things for a few years, and finally returned to teaching in this semester.
+  ○
+  ●	What courses do you teach? What has been your favourite or preferred?
+  ○	I have taught many courses across many different programs (including IMD, IMM - the one year program, Journalism, and others).  I've attached a full course list for your interest, but most probably isn't relevant to what you are doing.  Typically I teach in courses that have some sort of coding element, but not always.
+  ○	My favourites have definitely been the HTML and Javascript courses.  I enjoy coding and find teaching it to be quite fun as well.
+  ○
+  ●	What is your background in related schooling and industry? Are you currently employed in it?
+  ○	I have a bachelor's from Carleton in Film Studies (which is sort of related), and took IMD from 2005-2007.  As of this December I will also have a master's in education from UOIT.
+  ○	I have been employed in the industry at various points in time, though my last job (the one I just left) was only sort of related.  I am currently pursuing a nearly completely unrelated opportunity and am not employed in the industry.  My last directly related job was as the chief creative officer of a start-up from September of 2015 to September of 2016.
+  ●	Why did you come to Algonquin?
+  ○	Because I needed a job?  Actually, the company that I first worked at after graduating from IMD (I was doing 3D digital architecture, and was also the webmaster for a bit - it was a small company) was collapsing due to mismanagement and I happened to have a friend teaching in IMD who told me they might have an opening.  I honestly could not have said before I started that I could see myself becoming a teacher.  But, now that I am, I do quite enjoy it.
+  ○
+  ●	Do you have some advice for prospective IMD students?
+  ○	IMD is a tough program, but you get out of it what you put into it.  Work hard, stay on top of assignments, and above all, make sure you enjoy the work that you do.
+  ○
+
+  ●	What is your course (Project Management Skills) about?
+  ○	This course is designed to run in parallel with the Applied Projects course.  We teach skills necessary for running a successful multimedia project, then students apply them in the projects they do for the applied projects course.  There is definitely some overlap between the two courses in terms of material covered.
+  ○
+  ●	How much time per week should one devote to this course?
+  ○	Expect, on average, to have a two-hour class and a couple of hours of homework each week.
+  ○
+  ●	What skillset and equipment should students have before taking this course?
+  ○	You need a pen.  It sounds odd, but we do a lot of brainstorming and sketching activities.  It's good to have a general knowledge of multimedia skills and be aware of how a multimedia project would proceed, which is why this course is run after students have a year experience in the program.
+  ○
+  ●	What are the future benefits of taking this course?
+  ○	Project Management is a key skillset that most, if not all, employers are looking for.  It is absolutely necessary if you want to advance in this industry, and vital for doing any kind of freelance work.  Getting used to the process now makes it that much easier when you have to do it in the real world.
+  ○
+  ●	Why do you personally like this course?
+  ○	I like the survey nature of the course, that we cover a lot of material without digging too much in depth into any one area.  This gives students a strong base they can build from.  I also like the parallel nature of this course to Applied Projects.
+  ○
+
+  ●	Do we have permission to slightly paraphrase your words for page design uniformity? (i.e. “1 year” for IMD Years question turned to “I have been with IMD for 1 year.”) It is perfectly acceptable to decline.
+  ○	Yes, you may.
+  ○
+
+  I've attached the headshot that was actually shot at Algonquin.  It's a few years old but still good.  I've also attached the course list, it's usually an appendix to my CV.  If you have any further questions, let me know.
+
+  Hope the website building goes well.  Cheers,
+
+  --Adam
+
+
+  ________________________________________
+
+  Michael Eisenbraun, Server-Side Web Development
+
+
+  ●	How long have you been with Algonquin College and IMD?
+  ○	I have been teaching at Algonquin College in the IMD program for 3 years.
+  ●	What courses do you teach? What has been your favorite or preferred?
+  ○	Currently, I teach Client Side Web Development and Server Side Web Development.  I prefer Client Side Web Development, because of the excitement and potential JavaScript brings to modern web development.
+  ●	What is your background in related schooling and industry? Are you currently employed in it?
+  ○	I created my first website in 1997, and over the past 20 years, web development and design has remained a hobby. I am mostly self-taught with very little formal training, and I have over 10 years of professional experience. However, my focus, currently, is on teaching.
+  ●	Why did you come to Algonquin?
+  ○	The field of web design and development is ever-changing and if you don’t keep moving, you will fall behind. It is this realization that lead me to start teaching at Algonquin College in January of 2016. I have a passion for learning and it fuels my desire to share what I know with others.
+  ●	Do you have some advice for prospective IMD students?
+  ○	Don’t be afraid of new things and embrace change. In this field, things are changing all the time, and there is a constant array of new things to learn. You can choose to sit by the sidelines or you can be the one who is riding the wave.
+  ●	What is your course (Server-Side Web Development) about?
+  ○	Server-Side Web Development introduces students to the PHP scripting language and the MySQL database, and provides students with an understanding of the process that occurs on the server when a web page is requested.
+  ●	How much time per week should one devote to this course?
+  ○	Aside from the 3 hours in class and 1 hour online, student should be devoting at least 4 to 6 hours a week to the course.
+  ●	What skillset and equipment should students have before taking this course?
+  ○	Student should be familiar with some programming terminology and concepts. Students should also be comfortable with using a text editor and a command line interface. Finally, students will need a relatively new laptop with full administrative controls.
+  ●	What are the future benefits of taking this course?
+  ○	Server-Side Web Development teaches students the basics of the PHP scripting language, database management and design, and SQL. The course also introduces students to Laravel.
+  ●	Why do you personally like this course?
+  ○	In Server-Side Web Development, students are shown and taught for the first what happens when a request is made a server, before the HTML, CSS, and JavaScript is sent to the browser. Work with a server-side languages opens a whole new world of possibilities not possible with just HTML, CSS, and JavaScript alone.
+
+
+  Hussein Tayrani, Motion Graphics
+
+
+  ●	How long have you been with Algonquin College and IMD?
+  ○	Probably nine years.
+  ●	What courses do you teach? What has been your favorite or preferred?
+  ○	My most favorite one was motion graphics project lab because it’s a very big course and there’s a lot of one-on-one, and results towards the end are very good, unfortunately we do not offer this course anymore but it was my ultimate favorite one. I teach motion graphics at varying levels, content management systems, design, video, project management, digital publishing, multimedia, web and applied projects.
+  ●	What is your background in related schooling and industry? Are you currently employed in it?
+  ○	Well, I’ve been working since I was 15 in my field. I worked in media in the middle-east. The company I worked at was multi-national and I was in a technical support team as supervisor. I’ve also been doing freelancing since 2008. I worked for a company called Winden Media, but now I’m on contract with them. I did digital signage. I’ve been teaching for 8 or 9 years now. I also started my business about a year ago, in automotive.
+  ●	Why did you come to Algonquin?
+  ○	It’s actually interesting – I came to Canada to visit my brother, who was taking an advanced diploma in electrical engineering. He asked if I wanted to see where he went to school, I came here, I liked everything, and decided to take a different path. That’s why I took the IMD program, and I had the chance to become an assistant and teacher.
+  ●	Do you have some advice for prospective IMD students?
+  ○	Niche. Learn everything then find your niche. You can’t promote yourself as a master of everything. You still need to know about multiple areas; if you’re a graphic designer you still need to have some skills in video and photography and other things, but you really need your niche to say that you can do one, two, three.
+  ●	What is your course (Motion Graphics) about?
+  Well motion graphics, it hits a very booming area which is motion design. It is everywhere. It didn’t used to be, but now it is. I’m talking about tv, about web, about things you see on your phone. It is everywhere. You go to the restaurant, there are screens with motion graphics. The doctor’s office, the airport, everywhere you go, you see motion design, and it has a strong connection to digital signage which is everywhere now, so by acquiring these skills needed in the motion design world, you’ll be able to tackle a lot of different projects.
+  ●	How much time per week should one devote to this course?
+  ○	This is my ultimate rule: the way I see it always is three hours here, three hours at home, two hours here, two hours at home, every week. That’s the way it should be because one, you will basically go over all you had in the week and you will have no questions, and two, you will prepare for the next week so it isn’t fresh information for you.
+  ●	What skillset and equipment should students have before taking this course?
+  ○	A little bit of knowledge about Adobe, because this is Aftereffects. Some computer skills, organizing things, because you will really be importing a lot of files. If you don’t organize them the right way, it won’t be good. One last thing is that you need a good computer. Aftereffects requires a lot of resources.
+  ●	What are the future benefits of taking this course?
+  ○	It’ll help you in digital signage, motion design, and graphic design because even graphics designers don’t just design for print anymore. There are tablets, phones, computers. You really need some motion design skills.
+  ●	Why do you personally like this course?
+  ○	I like it because it is creative, there’s a lot of creativity here. It isn’t 1+1=2. You learn how to do things, but you’ll find yourself always imagining how an animation can work and how you can make it happen. What you’re doing is something that doesn’t exist yet. If you’re not creative, you won’t be able to do it.
+-->
